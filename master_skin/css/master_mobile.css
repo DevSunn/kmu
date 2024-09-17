@@ -1,0 +1,217 @@
+@charset "utf-8";
+
+/**[Layout]********************************************************/
+	#_wrap {
+		min-width: 320px;
+		width: auto !important;
+		_width: 320px;
+	}
+	#_wrap #_wrapHeader {
+		background-color: #fff;
+	}
+	#_wrap #_wrapHeader #_header {
+		height: 90px;
+	}
+	#_wrap #_wrapHeader #_header #gotoUniv,
+	#_wrap #_wrapHeader #_header #wrapGnavi{
+		display: none;
+	}
+	#_wrap #_wrapVisual {
+		display: none;
+	}
+	#_wrap #_wrapArticle #_container #_content {
+		padding: 0 0 30px;
+		position: relative;
+		z-index: 1;
+	}
+	#_wrap #_wrapArticle #_container #_content #masterEditor{
+		margin: 0 10px;
+	}
+	#_wrap #_wrapFooter #_footer .address{
+		padding: 30px 10px;
+		line-height: 1.5;
+	}
+	#_wrap #_wrapFooter #_footer .footLogo{
+		display: none;
+	}
+	#_wrap #_wrapHeader #_header,
+	#_wrap #_wrapArticle #_container,
+	#_wrap #_wrapFooter #_footer {
+		width: 100%;
+	}
+
+/**[바로가기]********************************************************/
+	#_wrap #_wrapFooter #_footer ._jumpTop{
+		right: 0;
+		top: 0;
+	}
+/**[점프메뉴]********************************************************/
+	#_wrap #_wrapFooter #_footer ._jumpMenuWrap {
+		padding: 0 10px 30px;
+		position: relative;
+	}
+	#_wrap #_wrapFooter #_footer ._jumpMenuWrap ._jumpMenu {
+		position: relative;
+	}
+	#_wrap #_wrapFooter #_footer ._jumpMenuWrap ._jumpMenu ._jumpSelect {
+		float: none;
+		background-color: red;
+		margin-right: 50px;
+	}
+	#_wrap #_wrapFooter #_footer ._jumpMenuWrap ._jumpMenu ._jumpSelect select {
+		width: 100%;
+	}
+	#_wrap #_wrapFooter #_footer ._jumpMenuWrap ._jumpMenu button {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+/**********************************************************/
+	#_logo{
+		top: 20px;
+		left: 10px;
+	}
+
+/**[모바일 - 메뉴열기/닫기]********************************************************/
+	#mMenu{
+		display: block !important;
+		position: absolute;
+		top: 50%;
+		right: 10px;
+		margin-top: -20px;
+	}
+	#mMenu .mMenuButton{
+		background-color: transparent;
+		background-repeat: no-repeat;
+	}
+	#mMenu #mMenuOpen{
+		background-position: 0 -82px;
+		background-color: #333;
+	}
+	#mMenu #mMenuClose{
+		background-position: 0 -41px;
+	}
+
+/**[주메뉴]********************************************************/
+	#wrapGnb{
+		display: none;
+		top: 90px;
+		right: 0;
+		width: 100%;
+		z-index: 9;
+		background-color: #2d3039;
+	}
+	.menuUItop a{
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+	.menuUItop ul.ul_1 li.li_1 {
+		float: none;
+		width: 100%;
+	}
+	.menuUItop ul.ul_1 li.li_1:before,
+	.menuUItop ul.ul_1 li.li_1:after {
+		content: "";
+		clear: both;
+		display: block;
+	}
+	.menuUItop ul.ul_1 li.li_1 a.a_1{
+		float: left;
+		width: 120px;
+		color: #fff;
+		height: 50px;
+		line-height: 50px;
+		background-image: none;
+		font-weight: 600;
+		font-size: 1.2em;
+		background-color: #454750;
+		border: 0;
+	}
+	.menuUItop ul.ul_1 li.li_1._last a.a_1 {
+		border: 0;
+	}
+	.menuUItop ul.ul_1 li.li_1 a.a_1:hover,
+	.menuUItop ul.ul_1 li.li_1 a.a_1._active{
+		background-color: #2d3039;
+		color: #2dafb2;
+	}
+	.menuUItop ul.ul_1 li.li_1 .div_2{
+		display: none;
+		margin-left: 130px;
+		background-color: #2d3039;
+		padding: 0;
+	}
+	.menuUItop ul.ul_1 li.li_1 .div_2 ul.ul_2 {
+		margin-left: 20px;
+		padding: 7px 0;
+		border: 0;
+	}
+	.menuUItop ul.ul_1 li.li_1 .div_2 ul.ul_2 li.li_2 {
+		float: none;
+	}
+	.menuUItop ul.ul_1 li.li_1 .div_2 ul.ul_2 li.li_2 a.a_2{
+		font-weight: 100;
+		color: #fff;
+		height: 40px;
+		line-height: 40px;
+		border-width: 1px 0 0 0;
+		border-color: #5d6264;
+		font-size: 1em;
+		display: block;
+		background-position: 0 20px;
+		padding: 0 0 0 10px;
+	}
+	.menuUItop ul.ul_1 li.li_1 .div_2 ul.ul_2 li.li_2._1st a.a_2{
+		border: none;
+	}
+	.menuUItop ul.ul_1 li.li_1 .div_2 ul.ul_2 li.li_2 a.a_2:hover,
+	.menuUItop ul.ul_1 li.li_1 .div_2 ul.ul_2 li.li_2 a.a_2._active{
+		color: #ffc000;
+	}
+	.menuUItop ul.ul_1 li.li_1 .div_2 .navGab{
+		display: none;
+	}
+	.menuUItop ul.ul_1 li.li_1._active .div_2{
+		display: block;
+	}
+
+/**[서브메뉴]********************************************************/
+	#wrapLnb{
+		display: none;
+	}
+
+/**탭메뉴********************************************************/
+	#masterTab{
+		text-align: center;
+	}
+	.menuUItab .tab_div{
+		display: block;
+	}
+	.menuUItab .tab_div .ul_3 .li_3{
+		width: 50%;
+		margin: 0;
+	}
+	.menuUItab .tab_div .ul_3 .li_3._even{
+		float: left;
+	}
+	.menuUItab .tab_div .ul_3 .li_3._odd{
+		float: right;
+	}
+
+/**페이지타이틀+페이지네비게이션********************************************************/
+	#masterTitle{
+		margin: 0 10px 30px;
+		color: #fff;
+		border: 1px #ddd solid;
+		background-color: #315d91;
+		text-align: center;
+	}
+	#masterTitle h1{
+		height: 60px;
+		line-height: 60px;
+		font-size: 20px;
+	}
+	#masterNavigation{
+		display: none;
+	}

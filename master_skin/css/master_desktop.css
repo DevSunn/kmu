@@ -1,0 +1,114 @@
+@charset "utf-8";
+
+/**[Layout]********************************************************/
+	#_wrap {
+	}
+	#_wrap #_wrapHeader {
+		background: url("../images/bg_wrapHeader.gif") repeat-x center bottom;
+	}
+	#_wrap #_wrapHeader #_header {
+		height: 125px;
+	}
+	#_wrap #_wrapVisual {
+		height: 175px;
+		background-position: center top;
+	}
+	#_wrap #_wrapVisual #_visual ._slogan{
+		top: 40px;
+		right: 0;
+	}
+	#_wrap #_wrapVisual #_visual ._slogan strong{
+		font-size: 2.4em;
+	}
+	#_wrap #_wrapVisual #_visual ._slogan em{
+		font-size: 1.4em;
+	}
+	#_wrap #_wrapArticle #_container #_content {
+		padding: 0 0 60px 0;
+	}
+	#_wrap #_wrapFooter #_footer{
+		height: 185px;
+	}
+	#_wrap #_wrapFooter #_footer .address{
+		padding-top: 40px;
+		line-height: 2;
+	}
+	#_wrap #_wrapHeader #_header,
+	#_wrap #_wrapVisual #_visual,
+	#_wrap #_wrapArticle #_container,
+	#_wrap #_wrapFooter #_footer {
+		width: 1200px;
+	}
+/**[바로가기]********************************************************/
+	#_wrap #_wrapFooter #_footer ._jumpTop{
+		right: 0;
+		top: 0;
+	}
+/**[점프메뉴]********************************************************/
+	#_wrap #_wrapFooter #_footer ._jumpMenuWrap {
+		top: 90px;
+		right: 0;
+	}
+/**[로고]********************************************************/
+	#_logo{
+		top: 15px;
+		left: 0px;
+	}
+
+/**[주메뉴]********************************************************/
+	#wrapGnb{
+		display: block !important;
+		left: 0;
+		top: 80px;
+		width: 1200px;
+		z-index: 2;
+	}
+	.menuUItop ul.ul_1 li.li_1 a.a_1{
+		height: 45px;
+		line-height: 45px;
+		font-size: 16px;
+	}
+	.menuUItop ul.ul_1 li.li_1 .div_2{
+		display: none;
+		position: absolute;
+		top: 45px;
+	}
+	.menuUItop ul.ul_1 li.li_1 .div_2 ul li a{
+		height: 35px;
+		line-height: 35px;
+	}
+
+
+/**[서브메뉴]********************************************************/
+
+
+/**[탭메뉴]********************************************************/
+	.menuUItab .tab_div .ul_3 .li_3{
+		width: 25%;
+	}
+
+/**페이지타이틀+페이지네비게이션********************************************************/
+	#masterTitle{
+		margin-bottom: 30px;
+		color: #000;
+		text-align: center;
+		border: 1px #ddd solid;
+		background-color: #fafafa;
+	}
+	#masterTitle h1{
+		height: 60px;
+		line-height: 60px;
+		font-size: 30px;
+	}
+	#masterNavigation {
+		overflow: hidden;
+		position: relative;
+		margin-bottom: 30px;
+	}
+	#masterNavigation .location{
+		float: right;
+		height: 30px;
+		line-height: 30px;
+		background: url("../images/navHome.gif") no-repeat left 50%;
+		padding-left: 20px;
+	}

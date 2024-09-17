@@ -1,0 +1,290 @@
+@charset "utf-8";
+
+/**[Layout]********************************************************/
+	#_wrap #_wrapHeader {
+	}
+	#_wrap #_wrapHeader #_header {
+		position: relative;
+	}
+	#_wrap #_wrapHeader #_header #wrapGnavi{
+		position: absolute;
+		top: 25px;
+		right: 120px;
+	}
+	#_wrap #_wrapHeader #_header #gotoUniv{
+		position: absolute;
+		top: 25px;
+		right: 0;
+		height: 25px;
+		line-height: 25px;
+		padding-left: 10px;
+		color: #2871b6;
+		font-weight: 600;
+		background: url("../images/directGab.gif") no-repeat 0 50%;
+	}
+	#_wrap #_wrapArticle #_container {
+		position: relative;
+		height: 500px;
+		min-height: 500px;
+	}
+	#_wrap #_wrapVisual {
+		background-image: url("../images/bg_wrapVisual.jpg");
+		background-repeat: no-repeat;
+	}
+	#_wrap #_wrapVisual #_visual{
+		position: relative;
+	}
+	#_wrap #_wrapVisual #_visual ._slogan {
+		text-align: right;
+		padding: 1em;
+		line-height: 1.5;
+		position: absolute;
+		background-color: rgba(0,0,0,0.5);
+	}
+	#_wrap #_wrapVisual #_visual ._slogan strong,
+	#_wrap #_wrapVisual #_visual ._slogan em{
+		color: #fff;
+		display: block;
+	}
+	#_wrap #_wrapArticle #_container #_content {
+		position: relative;
+	}
+	#_wrap #_wrapArticle #_container:before ,
+	#_wrap #_wrapArticle #_container:after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+	#_wrap #_wrapFooter {
+		background-color: #fff;
+		border-top: 1px #ddd solid;
+	}
+	#_wrap #_wrapFooter #_footer {
+		position: relative;
+		border-top: 1px #333 solid;
+	}
+	#_wrap #_wrapFooter #_footer .address{
+		color: #666;
+		font-size: 1.1em;
+	}
+	#_wrap #_wrapFooter #_footer .address .adWrap{
+		position: relative;
+		overflow: hidden;
+	}
+	#_wrap #_wrapFooter #_footer .address .adWrap:before,
+	#_wrap #_wrapFooter #_footer .address .adWrap:after{
+		content: "";
+		clear: both;
+		display: block;
+	}
+	#_wrap #_wrapFooter #_footer .address .adWrap span{
+		float: left;
+		margin-right: 15px;
+	}
+	#_wrap #_wrapFooter #_footer .footLogo{
+		position:absolute; 
+		right:0;
+		top: 20px;
+	}
+	#_wrap #_wrapHeader #_header,
+	#_wrap #_wrapVisual #_visual,
+	#_wrap #_wrapArticle #_container,
+	#_wrap #_wrapFooter #_footer {
+		margin: 0 auto;
+	}
+
+/**[바로가기]********************************************************/
+	#_wrap #_wrapFooter #_footer ._directWrap{
+		border-bottom: 1px #ccc solid;
+		height: 50px;
+		line-height: 50px;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+	#_wrap #_wrapFooter #_footer ._directWrap ._direct h2{
+		display: none;
+	}
+	#_wrap #_wrapFooter #_footer ._directWrap ._direct ul,
+	#_wrap #_wrapFooter #_footer ._directWrap ._direct ul li{
+		float: left;
+	}
+	#_wrap #_wrapFooter #_footer ._directWrap ._direct ul li a{
+		display: block;
+		color: #363636;
+		font-size: 1.1em;
+		padding: 0 1em;
+		background: url("../images/directGab.gif") no-repeat left 50%;
+	}
+	#_wrap #_wrapFooter #_footer ._directWrap ._direct ul li a:hover{
+		font-weight: 600;
+	}
+	#_wrap #_wrapFooter #_footer ._directWrap ._direct ul li:first-child a{
+		background: none;
+	}
+/**[점프메뉴]********************************************************/
+	#_wrap #_wrapFooter #_footer ._jumpMenuWrap {
+		position: absolute;
+	}
+	#_wrap #_wrapFooter #_footer ._jumpMenuWrap ._jumpMenu {
+		text-align: center;
+	}
+	#_wrap #_wrapFooter #_footer ._jumpMenuWrap ._jumpMenu h2{
+		display: none;
+	}
+	#_wrap #_wrapFooter #_footer ._jumpMenuWrap ._jumpMenu ._jumpSelect{
+		float: left;
+		margin-right: 5px;
+	}
+	#_wrap #_wrapFooter #_footer ._jumpMenuWrap ._jumpMenu select,
+	#_wrap #_wrapFooter #_footer ._jumpMenuWrap ._jumpMenu button{
+		height: 30px;
+	}
+	#_wrap #_wrapFooter #_footer ._jumpMenuWrap ._jumpMenu select{
+		border-color: #7e7e7e;
+	}
+	#_wrap #_wrapFooter #_footer ._jumpMenuWrap ._jumpMenu button{
+		height: 30px;
+		border: 0;
+		background-color: #7e7e7e;
+		color: #fff;
+		padding: 0 1em;
+	}
+/**[로고]********************************************************/
+	#_logo{
+		position: absolute;
+		overflow: hidden;
+	}
+	#_logo a,
+	#_logo em{
+		float: left;
+	}
+	#_logo em{
+		color: #333;
+		border-left: 1px #999 solid;
+		margin-top: 15px;
+		margin-left: 15px;
+		padding-left: 15px;
+	}
+
+/**[모바일 - 메뉴열기/닫기]********************************************************/
+	#mMenu{
+		display: none;
+	}
+	#mMenu .mMenuButton{
+		border: 0;
+		width: 41px;
+		height: 41px;
+		text-indent: -5000px;
+		background-image: url("../images/rMenuButton.gif");
+	}
+
+/**[주메뉴]********************************************************/
+	#wrapGnb{
+		position: absolute;
+		z-index: 10;
+		display: none;
+	}
+	.menuUItop {
+		position: relative;
+	}
+	.menuUItop a{
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+	.menuUItop #top_div {
+		margin: 0;
+		padding: 0;
+	}
+	.menuUItop ul.ul_1{
+		position: relative;
+	}
+	.menuUItop ul.ul_1 li.li_1{
+		float: left;
+	}
+	.menuUItop ul.ul_1 li.li_1 a.a_1{
+		font-weight: 400;
+		color: #fff;
+		margin: 0;
+		display: block;
+		border-width: 0 0 0 1px;
+		border-style: solid;
+		border-color: #6577a0;
+		text-align: center;
+	}
+	.menuUItop ul.ul_1 li.li_1._last a.a_1{
+		border-width: 0 1px;
+	}
+	.menuUItop ul.ul_1 li.li_1 a.a_1._active,
+	.menuUItop ul.ul_1 li.li_1 a.a_1:hover{
+		color: #fff ;
+	}
+	.menuUItop ul.ul_1 li.li_1 a.a_1._active{
+		font-weight: 600;
+	}
+	.menuUItop ul.ul_1 li.li_1 .div_2{
+		background-color: #112655;
+	}
+	.menuUItop ul.ul_1 li.li_1 .div_2 ul {
+		overflow: hidden;
+		border-width: 0 1px 1px 1px;
+		border-style: solid;
+		border-color: #6577a0;
+	}
+	.menuUItop ul.ul_1 li.li_1 .div_2 ul li a{
+		display: block;
+		margin: auto;
+		padding: 0 0 0 20px;
+		color: #bbd1ed;
+		border-width: 1px 0 0 0;
+		border-style: solid;
+		border-color: #6577a0;
+		background: url("../images/bg_menuTopAncA2.gif") no-repeat 10px 20px;
+	}
+	.menuUItop ul.ul_1 li.li_1 .div_2 ul li a:hover,
+	.menuUItop ul.ul_1 li.li_1 .div_2 ul li a._active{
+		color: #fff;
+	}
+	.menuUItop ul.ul_1 li.li_1 .div_2 ul li a._active{
+		font-weight: 600;
+	}
+	.menuUItop ul.ul_1 li.li_1 .div_2 .navGab{
+		display: none;
+	}
+
+
+/**[서브메뉴]********************************************************/
+	
+
+
+/**[탭메뉴]********************************************************/
+	#masterTab{
+		margin-bottom: 30px;
+	}
+	.menuUItab .tab_div .ul_3{
+		overflow: hidden;
+		position: relative;
+	}
+	.menuUItab .tab_div .ul_3 .li_3{
+		float: left;
+	}
+	.menuUItab .tab_div .ul_3 .li_3 .a_3 {
+		border-style: solid;
+		border-color: #ddd;
+		border-width: 1px;
+		display: block;
+		font-size: 16px;
+		height: 46px;
+		line-height: 46px;
+		text-align: center;
+	}
+	.menuUItab .tab_div .ul_3 .li_3 .a_3:hover,
+	.menuUItab .tab_div .ul_3 .li_3 .a_3._active{
+		color: #fff;
+		background-color: #333;
+		border-color: #555;
+	}
+	.menuUItab .tab_div .ul_3 .li_3 .div_4{
+		display: none;
+	}
